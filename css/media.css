@@ -1,0 +1,32 @@
+
+
+.main-box{
+		
+		min-width: 15em;
+		background-color: lightgreen;
+
+	}
+
+	.left-box{
+	width: 62.5%;
+	
+}
+.right-box{
+	width: 25%;
+	display: none;
+	
+}
+
+.red-box{
+	width:40%;
+	
+}
+.blue-box{
+	width: 40%;
+	height: 200px;
+	
+}
+.yellow-box{
+	width: 75%;
+}
+
