@@ -1,0 +1,47 @@
+@media only screen and (min-width: 938px){
+.main-container-wrapper{
+	width: 100%;
+	min-width: 62.625em;
+	margin: auto;
+	max-width: unset;
+	
+}
+ .header-top-content{
+ 	width: 58.625em;
+ 	margin: auto;
+ 	
+ }
+
+
+.body-wrapper{
+	width: 58.625em;
+	margin: auto;
+}
+
+.col3-left{
+	width:58.625em;
+	margin: 3.198294243070362% auto;
+}
+ 
+.left-container{
+	width: 78.67803837953092%;
+	float:left;
+
+}
+.middle-container{
+	width: 70.18970189701897%;
+	float: right;
+	background-color: #fefffd;
+	clear: unset;
+}
+
+.small-left-container{
+	width: 26.28726287262873%;
+	float: left;
+	min-height: 606px;
+	background-color: #f5f5f5;
+	display: inline;
+}
+
+
+}
