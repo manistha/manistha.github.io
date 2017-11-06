@@ -1,4 +1,65 @@
-@media only screen and (min-width: 1002px){
+
+.main-container-wrapper{
+		min-width: unset;
+		max-width: 62.625em; 
+	}
+
+
+	.header-top-content{
+ 	width: 58.625em;
+ 	margin: auto;
+ 	
+ }
+
+
+.body-wrapper{
+	width: 58.625em;
+	margin: auto;
+}
+
+.col3-left{
+	width:58.625em;
+	margin: 3.198294243070362% auto;
+}
+ 
+.left-container{
+	width: 78.67803837953092%;
+	float:left;
+
+
+}
+.middle-container{
+	width: 70.18970189701897%;
+	float: right;
+	background-color: #fefffd;
+}
+
+.small-left-container{
+	width: 26.28726287262873%;
+	float: left;
+	min-height: 606px;
+	background-color: #f5f5f5;
+	display: none;
+	
+}
+
+.footer-wrapper{
+	background-color:#727272;
+	width: 100%;
+}
+
+.footer{
+	width:58.625em;
+	margin:auto;
+	color: #ffffff;
+	padding-bottom: 17px;
+	padding-top: 17px;
+	font-size: 8px;
+}
+
+/*end of layout
+*/
+
 a{
 
 	text-decoration:none;
@@ -27,7 +88,6 @@ ul{
 	width: 224px;
 	float: left;
 	max-height: 50px;
-	margin-left:unset;
 }
 
 .search{
@@ -37,7 +97,6 @@ ul{
 	background-repeat: no-repeat;
 	float:right;
 	margin-top: 18px;
-	display: inline;
 
 }
 .texts{
@@ -93,8 +152,6 @@ ul{
 	width: auto;
 	float: right;
 	margin-top: 4px;
-	margin-left: unset;
-	clear: unset;
 }
 
 .username{
@@ -119,7 +176,7 @@ ul{
 }
 
 .header-bottom-content{
-	width: 58.625em;;
+	width:  58.625em;
 	margin: auto;
 }
 .header-bottom-nav ul li{
@@ -142,19 +199,15 @@ ul{
 .header-bottom-nav{
 	width: auto;
 	float:left;
-	display: inline;
 }
 .right-list{
 	width: auto;
 	float: right;
 	margin-top: 12px;
-	clear: unset;
-	padding-bottom: unset;
 }
 
 .topic-box{
 	float: left;
-	margin-left: unset;
 	background-image: url("../images/topic-box.png");
 	background-repeat: no-repeat;
 
@@ -185,10 +238,6 @@ ul{
 	font-size: 12px;
 }
 
-
-.side-nav{
-	display: inline;
-}
 
 .side-nav ul li a{
 	font-size: 11px;
@@ -254,7 +303,6 @@ ul{
 .all-entries{
 	width: 30.88803088803089%;
 	float:left;
-	display: inline;
 
 }
 .all-entries p{
@@ -269,7 +317,6 @@ ul{
 	margin-bottom: 8px;
 	margin-top: 14px;
 	font-size: 13px;
-	display: inline;
 
 }
 .left-tabs{
@@ -280,7 +327,6 @@ ul{
 
 .left-tabs ul{
 	list-style: none;
-	background-color: unset;
 }
 
 .left-tabs ul li{
@@ -332,7 +378,6 @@ ul{
  .news-story{
  	width: 84.55598455598456%;
  	float: right;
- 	clear: unset;
  }
 
  .frame{
@@ -410,7 +455,7 @@ font-size: 16px;
 }
 
 .footer{
-	width: 93.6127744510978%;
+	width: 58.625em;
 	margin:auto;
 	color: #ffffff;
 	padding-bottom: 14px;
@@ -426,8 +471,6 @@ font-size: 16px;
 .copyright{
 	width: auto ;
 	float: right;
-	margin-top: unset;
-	clear: unset;
 }
 .copyright ul{
 	list-style:none;
@@ -463,4 +506,33 @@ list-style: none;
 
 
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

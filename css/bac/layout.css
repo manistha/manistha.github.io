@@ -1,9 +1,7 @@
-@media only screen and (min-width: 938px){
+@media only screen and (min-width: 768px){
 .main-container-wrapper{
 	width: 100%;
-	min-width: 62em;
-	margin: auto;
-	max-width: unset;
+	min-width: 62.625em;
 	
 }
  .header-top-content{
@@ -32,7 +30,6 @@
 	width: 70.18970189701897%;
 	float: right;
 	background-color: #fefffd;
-	clear: unset;
 }
 
 .small-left-container{
