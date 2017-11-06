@@ -406,17 +406,16 @@ font-size: 16px;
 
 .footer-wrapper{
 	background-color:#727272;
-	width: 100%;
+  
+	
 }
 
 .footer{
-	width: 93.6127744510978%;
+	width:58.625em;
 	margin:auto;
 	color: #ffffff;
 	padding-bottom: 14px;
 	padding-top: 14px;
-	
-	background-color: inherit;
 }
 
 .footer-list{
