@@ -1,6 +1,6 @@
 function ship(parent) {
     this.element = document.createElement('div');
-    this.currentPosition=0;
+    this.position=0;
     this.element.style.width = "74px";
     this.element.style.height = "181px";
     this.element.style.backgroundImage = 'url("images/space-ship.png")';
@@ -83,28 +83,30 @@ function ShipGame(mainId) {
         var carTop=this.vehicle.element;
         var obsTop, obs;
         var obsLeft;
-
-        that.obsplay=setInterval(function(){
-            obs = new Obstacle('main-wrapper'); 
-            that.obstacles.push(obs);
-            },1000);  
+         var counter=0;
   
          that.play=  setInterval(function() {
+             if((counter%20)==0){
+               if(counter>=180){counter=0}
+               obs = new Obstacle('main-wrapper'); 
+            }
+
+            counter++;
+            that.obstacles.push(obs);
+
               main.style.backgroundPosition = xPosition + ' ' + yPosition + 'px';
-              yPosition++;
+              yPosition = yPosition + 5;
 
 
-        that.obstacles.forEach(function(obs){
+               that.obstacles.forEach(function(obs){
                 
                 obs.obstacle.style.top = parseInt(obs.obstacle.style.top) + 1+ 'px';
                 obsLeft=parseInt(obs.obstacle.style.left);
                 obsTop=parseInt(obs.obstacle.style.top);
-                console.log(obs.obstacle.currentPosition);
-                 if ( (obs.obstacle.currentPosition==that.vehicle.currentPosition)) {
+                 if ( (obs.obstacle.currentPosition==that.vehicle.position)) {
                         
                     if(obsTop+40>520){
-                        console.log()
-                        debugger;
+                        clearInterval(that.play);
                         main.innerHTML="gameover";
                         main.style.fontSize='50px';
                         main.style.textAlign='center';
@@ -128,7 +130,7 @@ function ShipGame(mainId) {
             that.bullets.splice(that.bullets.indexOf(bullet), 1);
         }
         })
-        }, 1);
+        }, 100);
 
 
     }
@@ -147,7 +149,6 @@ function ShipGame(mainId) {
         
         this.button.onclick=function(){
             clearInterval(that.play);
-            clearInterval(that.obsplay);
             location.reload();
 
 
@@ -202,13 +203,15 @@ function Obstacle(mainId) {
     this.obstacle.style.backgroundImage = 'url("images/stone.png")';
     main.appendChild(this.obstacle);
     this.remove = function(){
-      this.obstacle.style.display="none";
+      // main.removeChild(this.obstacle);
+      this.obstacle.style.display = 'none';
+      this.obstacle.currentPosition=3;
+      // that.obstacles.splice(that.obstacles.indexOf(obstacle), 1);
     }
     }
 
 
 var carPositoins=[];
-var lastPosition;
 document.onkeydown = function(event) {
 
     games.forEach(function(game) {
@@ -217,11 +220,8 @@ document.onkeydown = function(event) {
             game.vehicle.moveLeft();
             game.vehicle.updatePosition();
             if(game.vehicle.position==0)
-                {game.vehicle.position==0};
+                {game.vehicle.position=0};
             game.vehicle.position--;
-            // carPositoin=parseInt(game.vehicle.x);
-            // carPositoins.push(carPositoin);
-            // lastPosition=(carPositoins[carPositoins.length-1])
 
         }
 
@@ -229,12 +229,8 @@ document.onkeydown = function(event) {
             game.vehicle.moveRight();
             game.vehicle.updatePosition();
             if(game.vehicle.position==2)
-                {game.vehicle.position==2};
+                {game.vehicle.position=2};
             game.vehicle.position++;
-            // carPositoin=parseInt(game.vehicle.x);
-            // carPositoins.push(carPositoin);
-            // lastPosition=(carPositoins[carPositoins.length-1]);
-
         }
         if (event.keyCode == 32) {
             var bullet = new Bullet();
