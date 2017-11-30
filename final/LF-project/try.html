@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    
+</head>
+<body>
+<div >
+    
+</div>
+
+
+<script >
+var mousePosition;
+var offset = [0,0];
+var div;
+var isDown = false;
+
+block = document.getElementsByTagName('div')[0];
+console.log(div)
+block.style.position = "absolute";
+block.style.left = "0px";
+block.style.top = "0px";
+block.style.width = "100px";
+block.style.height = "100px";
+block.style.background = "red";
+document.body.appendChild(block);
+
+block.addEventListener('mousedown', function(e) {
+    isDown = true;
+    offset = [
+        block.offsetLeft - e.clientX,
+        block.offsetTop - e.clientY
+    ];
+}, true);
+
+document.addEventListener('mouseup', function() {
+    isDown = false;
+}, true);
+
+document.addEventListener('mousemove', function(event) {
+    event.preventDefault();
+    if (isDown) {
+        mousePosition = {
+
+            x : event.clientX,
+            y : event.clientY
+
+        };
+        block.style.left = (mousePosition.x + offset[0]) + 'px';
+        block.style.top  = (mousePosition.y + offset[1]) + 'px';
+    }
+}, true);
+    </script>
+</body>
+</html>
+

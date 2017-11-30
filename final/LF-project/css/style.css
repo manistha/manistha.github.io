@@ -1,0 +1,104 @@
+.main-wrapper{
+				height:730px;
+				width: 1530px;
+				background:#000000;
+				opacity:0.9;
+				margin: auto;
+				
+			}
+
+			.screen{
+				height: 730px;
+				width: 1002px;
+				overflow: hidden;
+				background: white;
+				margin: auto;
+				position: relative;
+			}
+
+			.convoBox{
+				opacity: 0.7;
+				width: 1002px;
+				height: 70px;
+				box-shadow:0px 0px 10px 10px #000;
+			}
+
+
+			.screenElem {
+		   
+		    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 13.1 */
+		       -moz-animation: fadein 3s; /* Firefox < 16 */
+		        -ms-animation: fadein 3s; /* Internet Explorer */
+		         -o-animation: fadein 3s; /* Opera < 13.1 */
+		            animation: fadein 3s;
+			}
+
+			
+
+
+			@keyframes fadein {
+			    from { opacity: 0.3; }
+			    to   { opacity: 1; }
+			}
+
+			/* Firefox < 16 */
+			@-moz-keyframes fadein {
+			    from { opacity: 0.3; }
+			    to   { opacity: 1; }
+			}
+
+			/* Safari, Chrome and Opera > 12.1 */
+			@-webkit-keyframes fadein {
+			    from { opacity: 0.3; }
+			    to   { opacity: 1; }
+			}
+
+			/* Internet Explorer */
+			@-ms-keyframes fadein {
+			    from { opacity: 0.3; }
+			    to   { opacity: 1; }
+			}
+
+			/* Opera < 12.1 */
+			@-o-keyframes fadein {
+			    from { opacity: 0.3; }
+			    to   { opacity: 1; }
+
+			fadeOut{
+				-webkit-animation: fadeout 2s; /* Safari, Chrome and Opera > 12.1 */
+			       -moz-animation: fadeout 2s; /* Firefox < 16 */
+			        -ms-animation: fadeout 2s; /* Internet Explorer */
+			         -o-animation: fadeout 2s; /* Opera < 12.1 */
+			            animation: fadeout 2s;
+						}
+
+			@keyframes fadeout {
+			    from { opacity: 1; }
+			    to   { opacity: 0; }
+			}
+
+			/* Firefox < 16 */
+			@-moz-keyframes fadeout {
+			    from { opacity: 1; }
+			    to   { opacity: 0; }
+			}
+
+			/* Safari, Chrome and Opera > 12.1 */
+			@-webkit-keyframes fadeout {
+			    from { opacity: 1; }
+			    to   { opacity: 0; }
+			}
+
+			/* Internet Explorer */
+			@-ms-keyframes fadeout {
+			    from { opacity: 1; }
+			    to   { opacity: 0; }
+			}
+
+			/* Opera < 12.1 */
+			@-o-keyframes fadeout {
+			    from { opacity: 1; }
+			    to   { opacity: 0; }
+			}
+
+

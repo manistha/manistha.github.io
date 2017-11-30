@@ -1,0 +1,138 @@
+@media only screen and (min-width: 1170px) {
+.main-wrapper{
+	max-width: 93.75em;
+	margin: auto;
+}
+.header-top-wrapper{
+	background-image: url("../images/green-scale.png");
+	
+	margin: auto;
+	
+}
+
+.header-top-content{
+	width: 78%;
+	margin: auto;
+	padding-top:28px; 
+	padding-bottom: 27px;
+
+}
+
+.header-bottom-content{
+	width:78%;
+	margin: auto;
+}
+
+.banner-top{
+	width: 78%;
+	margin: auto;
+	padding-top: 35px;
+	padding-bottom: 2px;
+}
+
+.banner-bottom{
+	width: 78%;
+	margin: auto;
+	margin-top: 50px;
+}
+
+
+.body-top{
+	width: 78%;
+	margin: auto;
+}
+
+
+.body-bottom{
+	width: 78%;
+	margin:  0 auto;
+	padding-bottom:87px;
+}
+
+
+.project-description{
+	width: 65.81196581196581%;
+	float: left;
+
+}
+
+
+
+
+.project-details{
+	width: auto;
+	float: right;
+	margin-top: 0px;
+}
+
+.project-details i{
+	padding-right: 5px;
+	font-size: 14px;
+}
+
+
+
+.footer-wrapper{
+	color: #ffffff;
+	margin: auto;
+}
+
+.footer-lower-content{
+	width:78%;
+	margin: auto;
+}
+
+.footer-upper-content{
+	width: 78%;
+	margin: auto;
+}
+
+
+.about-modus,.company, .community,.blog
+{
+	float: left;
+	font-size: 13px;
+	clear: none;
+	margin-top: 0px;
+}
+/*
+.company ul li, .community ul li{
+	width: unset;
+	float: unset;
+}*/
+.about-modus{
+	width: 30.85470085470085%;
+	padding-right: 37px;
+}
+.company{
+	width: 17.09401709401709%;
+}
+.community{
+	width: 16.92307692307692%;
+}
+.blog{
+	width: 25.46153846153846%;
+}
+
+
+.social-icons{
+	font-size: 20px;
+}
+.social-icons ul li{
+	padding: 0px 8px;
+	line-height: 50px;
+}
+
+.social-icons ul li:last-child{
+	padding-right:15px;
+
+}
+.copyright{
+	line-height: 50px;
+}
+}
+
+
+
+
+

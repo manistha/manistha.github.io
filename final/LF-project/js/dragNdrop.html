@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style >
+  #div1{
+    width: 500px;
+    height: 500px; background: red;
+    margin: 50px;
+  }
+</style>
+<script>
+
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<img id="drag1" src="../images/SH-tile.png" draggable="true"
+ondragstart="drag(event)" width="218" height="106">
+
+</body>
+</html>
